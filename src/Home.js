@@ -1,12 +1,12 @@
 import {StyleSheet, Text, View, SafeAreaView, ImageBackground, Button, TouchableOpacity} from 'react-native';
 
-import Signup from './Signup';
-import Login from './Login';
+import Signup from '../src/Signup';
+import Login from '../src/Login';
 
 function Home({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground source={require("./assets/Solidere.jpg")} style={styles.image}>
+      <ImageBackground source={require("../assets/Solidere.jpg")} style={styles.image}>
         <View style={styles.innerView}>
           <Text style={styles.text}>Xplore LB</Text>
           <View style={styles.line} />
