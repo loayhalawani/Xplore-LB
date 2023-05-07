@@ -5,7 +5,7 @@ import Main from './Main';
 function Login({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground source={require("./assets/Raouche.jpg")} style={styles.image}>
+      <ImageBackground source={require("../assets/Raouche.jpg")} style={styles.image}>
         <View style={styles.innerView}>
           <Text style={styles.text2}>Welcome Back</Text>
           <View style={styles.line} />
