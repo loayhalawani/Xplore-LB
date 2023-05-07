@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View, SafeAreaView, ImageBackground, Button, TouchableOpacity} from 'react-native';
 
-import Signup from '../src/Signup';
-import Login from '../src/Login';
+import Signup from './Signup';
+import Login from './Login';
 
 function Home({navigation}) {
   return (
