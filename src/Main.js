@@ -45,112 +45,112 @@ function Main({navigation}) {
       name: "Beirut Souks",
       rating: "4.8",
       categories: [1],
-      photo: require('./assets/Beirut-Souks.jpg'),
+      photo: require('../assets/Beirut-Souks.jpg'),
     },
     {
       id: 2,
       name: "The National Museum of Beirut",
       rating: "4.2",
       categories: [1],
-      photo: require('./assets/Museum.jpg'),
+      photo: require('../assets/Museum.jpg'),
     },
     {
       id: 3,
       name: "Qammouaa Nature Reserve",
       rating: "4.4",
       categories: [2],
-      photo: require('./assets/Nature.jpg'),
+      photo: require('../assets/Nature.jpg'),
     },
     {
       id: 4,
       name: "Halba Citadel",
       rating: "4.1",
       categories: [2],
-      photo: require('./assets/Halba.jpg'),
+      photo: require('../assets/Halba.jpg'),
     },
     {
       id: 5,
       name: "Byblos",
       rating: "4.9",
       categories: [3],
-      photo: require('./assets/Byblos.jpg'),
+      photo: require('../assets/Byblos.jpg'),
     },
     {
       id: 6,
       name: "The Cedars of God",
       rating: "4.6",
       categories: [3],
-      photo: require('./assets/Cedars.jpg'),
+      photo: require('../assets/Cedars.jpg'),
     },
     {
       id: 7,
       name: "Jeita Grotto",
       rating: "4.7",
       categories: [4],
-      photo: require('./assets/Jeita.jpg'),
+      photo: require('../assets/Jeita.jpg'),
     },
     {
       id: 8,
       name: "Beit ed-Dine Palace",
       rating: "4.2",
       categories: [4],
-      photo: require('./assets/Beit.jpg'),
+      photo: require('../assets/Beit.jpg'),
     },
     {
       id: 9,
       name: "Tyre",
       rating: "4.3",
       categories: [5],
-      photo: require('./assets/Tyre.jpg'),
+      photo: require('../assets/Tyre.jpg'),
     },
     {
       id: 10,
       name: "Al-Bass Archaeological Site",
       rating: "4.5",
       categories: [5],
-      photo: require('./assets/Al-Bass.jpg'),
+      photo: require('../assets/Al-Bass.jpg'),
     },
     {
       id: 11,
       name: "Baalbek",
       rating: "4.4",
       categories: [6],
-      photo: require('./assets/Baalbek.jpg'),
+      photo: require('../assets/Baalbek.jpg'),
     },
     {
       id: 12,
       name: "Qadisha Valley",
       rating: "4.5",
       categories: [6],
-      photo: require('./assets/Qadisha.jpg'),
+      photo: require('../assets/Qadisha.jpg'),
     },
     {
       id: 13,
       name: "Qaraoun Lake",
       rating: "4.7",
       categories: [7],
-      photo: require('./assets/Lake.jpg'),
+      photo: require('../assets/Lake.jpg'),
     },
     {
       id: 14,
       name: "Ksara Winery",
       rating: "4.4",
       categories: [7],
-      photo: require('./assets/Winery.jpg'),
+      photo: require('../assets/Winery.jpg'),
     },
     {
       id: 15,
       name: "Beaufort Castle",
       rating: "4.8",
       categories: [8],
-      photo: require('./assets/Castle.jpg'),
+      photo: require('../assets/Castle.jpg'),
     },
     {
       id: 16,
       name: "Deir Al Zahrani",
       rating: "4.7",
       categories: [8],
-      photo: require('./assets/Deir.jpg'),
+      photo: require('../assets/Deir.jpg'),
     },
   ]
   
@@ -187,7 +187,7 @@ function Main({navigation}) {
           <Text style={styles.title}>{item.name}</Text>
         </View>
         <View style={styles.desc}>
-          <Image source={require('./assets/star.png')} style={styles.star} />
+          <Image source={require('../assets/star.png')} style={styles.star} />
           <Text style={styles.rate}>{item.rating}</Text>
           <Text>{item.categories.map((categoryId) => {
             return (
@@ -204,13 +204,13 @@ function Main({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container1}>
-        <Image source={require("./assets/user.png")} style={styles.user} />
+        <Image source={require("../assets/user.png")} style={styles.user} />
         <TouchableOpacity onPress={() => navigation.navigate(Home)}>
           <Text style={styles.logout}>Logout</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.container2}>
-        <Image source={require("./assets/filter.png")} style={styles.filter} />
+        <Image source={require("../assets/filter.png")} style={styles.filter} />
         <FlatList data={categories} horizontal showHorizontalScrollIndicator={true} renderItem={renderItem} keyExtractor={item => '${item.id}'} />
       </View>
       <View style={styles.container3}>
