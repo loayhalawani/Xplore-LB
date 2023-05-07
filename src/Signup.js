@@ -7,7 +7,7 @@ function Signup({navigation}) {
   const [text, setText] = useState('');
   return (
     <SafeAreaView style={styles.container}>
-      <ImageBackground source={require("./assets/Cliff.jpg")} style={styles.image}>
+      <ImageBackground source={require("../assets/Cliff.jpg")} style={styles.image}>
         <View style={styles.innerView}>
           <Text style={styles.text2}>Get Started</Text>
           <View style={styles.line} />
